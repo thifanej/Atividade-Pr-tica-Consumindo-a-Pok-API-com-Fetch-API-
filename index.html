@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Fetch API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Pokédex REST</h1>
+       
+        <form id="form-busca" class="barra-busca">
+            <input type="text" id="input-pokemon" placeholder="Digite o nome ou ID (ex: pikachu, 6)" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <p id="mensagem-status" class="status"></p>
+
+        <!-- Card que será preenchido dinamicamente pela API -->
+        <section id="card-pokemon" class="card oculto">
+            <span id="poke-id" class="numero">#000</span>
+            <img id="poke-img" src="" alt="Imagem do Pokémon">
+            <h2 id="poke-nome">Nome</h2>
+            <p id="poke-tipo" class="tipo">Tipo</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
